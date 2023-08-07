@@ -1,0 +1,93 @@
+@use 'variables';
+
+
+form
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: variables.$grayrgb;
+    color: variables.$white;
+    text-align: start;
+    padding: 10px;
+    border-radius: 9px;
+
+
+    button
+    {
+        background-color: transparent;
+        border: none;
+        color: rgb(24, 248, 24);
+        font-size: 17px;
+    }
+    button:active
+    {
+        color: darkgreen;
+    }
+
+    .orange button
+    {
+        background-color: transparent;
+        border: none;
+        color: rgb(238, 181, 7);
+        font-size: 17px;
+    }
+    div {
+    
+        border-bottom: 1px solid rgb(172, 167, 167);
+        margin-bottom: 9px;
+        
+        label
+        {
+            font-size: 12px;
+            font-weight: 100;
+            font-style: italic;
+            letter-spacing: 1.5px;
+           
+        }
+
+            
+        input
+        {
+            border: 0;
+            border-radius: 3px;
+            margin-bottom: 5px;
+            width: 100%;
+            background-color: transparent;
+            color: variables.$white;
+            caret-color: variables.$white;
+          font-weight: 100;
+          font-size: 11px;
+
+        }
+
+        input::placeholder
+        {
+            color:variables.$white;
+            font-size: 11px;
+            opacity: 0.5;   
+        }
+
+        textarea::placeholder
+        {
+            color: variables.$white;
+            opacity: 0.4;
+            font-size: 11px;
+        }
+
+        textarea
+        {
+            
+            font-size: 11px;
+           color: variables.$white;
+            background-color: transparent;
+            border-radius: 3px;
+            border-color: variables.$white;
+            border: none;
+        }
+       
+    }
+ 
+ 
+}

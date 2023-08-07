@@ -1,0 +1,145 @@
+@use 'variables';
+
+.main-cont {
+    background-color: transparent;
+    /*     border: 4px solid green; */
+    border-radius: 25px;
+
+    .count-con {
+        display: flex;
+        background-color: rgb(54, 72, 72);
+        justify-content: flex-start;
+        padding: 5px;
+        border-radius: 5px;
+        color: #FFF;
+
+        p {
+            flex: 1;
+            font-weight: 100;
+            font-size: 14px;
+            font-style: normal;
+
+        }
+
+        span {
+            font-size: 16px;
+        }
+
+        button {
+            font-size: 12px;
+            order: 2;
+            background: transparent;
+            border: none;
+            color: #FFF;
+            opacity: 0.8;
+        }
+
+        button {
+            &:hover {
+                cursor: pointer;
+                color: lightskyblue;
+                opacity: 1;
+            }
+        }
+    }
+
+    .btn-con {
+        margin-bottom: 10px;
+        background-color: rgb(54, 72, 72);
+        border-radius: 5px;
+        padding: 5px;
+        color: #FFF;
+
+        span {
+            color: #FFF;
+
+        }
+
+        path {
+
+            &:hover {
+                cursor: pointer;
+                color: variables.$color-gray;
+            }
+
+        }
+
+    }
+
+
+    .container {
+        display: flex;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background-color: rgb(54, 72, 72);
+        box-shadow: inset 0px 2px 7px 0px rgba(255, 255, 255, 0.2);
+
+
+        .single-cont {
+
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+
+            p {
+                color: variables.$color-lightgray;
+                padding: 10px;
+                font-weight: 100;
+                font-size: 10px;
+                order: 3;
+                font-style: italic;
+            }
+
+            p:last-child {
+                font-size: 12px;
+                justify-self: flex-end;
+    
+            }
+
+            h1 {
+                color: variables.$color-lightgray;
+                padding: 10px;
+                text-transform: capitalize;
+                font-weight: 300;
+                font-size: 25px;
+    
+    
+            }
+
+            h1 {
+                &:hover {
+                    text-decoration: none;
+                    transform: translateY(-5px);
+                    color: gold;
+                }
+    
+            }
+
+            
+            .data-cont {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                flex-grow: 2;
+
+                .gred {
+                    display: flex;
+                    align-items: flex-end;
+
+
+                }
+
+                .gred {
+                    &:hover {
+                        transform: translateY(-2px)
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}

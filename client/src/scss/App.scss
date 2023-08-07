@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;700;800&family=Poppins:wght@300;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(156, 93, 93, 1) 100%);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+.App
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
